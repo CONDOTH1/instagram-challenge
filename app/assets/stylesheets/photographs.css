@@ -32,3 +32,7 @@
 .admirations-link:hover {
   background-color: #000099;
 }
+
+.editing {
+  padding: 10px;
+}

@@ -26,11 +26,11 @@
   <% else %>
     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
   <% end %>
-  <h1>PhotoHub</h1>
-  <div id="mainBody">
-  <%= notice %>
-  <%= alert %><br>
-  <%= yield %>
+  <h1><%= link_to "PhotoHub", root_path%></h1>
+  <div class="editing">
+    <%= notice %>
+    <%= alert %><br>
+    <%= yield %>
   </div>
 </body>
 </html>
