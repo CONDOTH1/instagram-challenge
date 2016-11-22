@@ -1,0 +1,16 @@
+.photographs:hover {
+    background-color: #111;
+}
+
+.photographs {
+    background-color: #333;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.photographs:hover, .photographs:active {
+    background-color: #000099;
+}

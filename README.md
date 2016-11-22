@@ -1,10 +1,10 @@
 Instagram Challenge
 ===================
 
-Aim of this Exercise-------
+Aim of this Exercise -------
 * Build Instagram: Simple huh!
 
-Timeframe-------
+Timeframe -------
 * Challenge time: one weekend
 
 
