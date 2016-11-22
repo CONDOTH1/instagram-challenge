@@ -5,12 +5,30 @@
 .photographs {
     background-color: #333;
     color: white;
-    padding: 14px 25px;
+    padding: 0px 25px;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    border-radius: 25px;
 }
 
-.photographs:hover, .photographs:active {
-    background-color: #000099;
+.centerPhotos {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.admirations-link {
+  background-color: #337ab7;
+  color: white;
+  padding: 1px 10px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.admirations-link:hover {
+  background-color: #000099;
 }

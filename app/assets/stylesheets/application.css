@@ -22,26 +22,40 @@
      background-color: #333;
  }
 
- li {
-     float: left;
- }
-
  li a {
-     display: block;
+     display: inline-block;
      color: white;
      text-align: center;
      padding: 14px 16px;
      text-decoration: none;
  }
 
+ .floatLeft li{
+   float: left;
+   display: inline-block;
+ }
+
+ .floatRight{
+   float: right;
+ }
+
  li a:hover {
      background-color: #111;
  }
 
- #menuBar {
-   height: 50px;
+ h1 {
+   text-align: center;
  }
 
- li #addPhoto {
-  float: right;
+ h2 {
+   text-align: center;
+ }
+
+ img {
+  margin: 0 auto;
+  display: block;
+ }
+
+ #menuBar {
+   height: 50px;
  }

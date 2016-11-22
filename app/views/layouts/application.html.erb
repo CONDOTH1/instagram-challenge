@@ -13,17 +13,24 @@
   <% if !user_signed_in? %>
   <div id="menuBar">
     <ul>
-      <li><%= link_to "Sign in", new_user_session_path %></li>
-      <li><%= link_to "Sign up", new_user_registration_path %></li>
-      <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
-      <li><a href='<%= new_photograph_path %>' id="addPhoto">Add a photograph</a></li>
+      <div class="floatLeft">
+        <li><%= link_to "Sign in", new_user_session_path %></li>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
+      </div>
+      <div class="floatRight">
+        <li><a href='<%= new_photograph_path %>' id="addPhoto">Add a photograph</a></li>
+      </div>
     </ul>
   </div>
   <% else %>
     <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
   <% end %>
+  <h1>PhotoHub</h1>
+  <div id="mainBody">
   <%= notice %>
   <%= alert %><br>
   <%= yield %>
+  </div>
 </body>
 </html>
