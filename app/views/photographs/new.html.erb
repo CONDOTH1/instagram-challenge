@@ -8,9 +8,10 @@
     </ul>
   </section>
 <% end %>
+<h4>Add A Photograph</h4><br>
 <%= form_for @photograph, html: {multipart: true} do |f| %>
-  <%= f.file_field :image %>
-  <%= f.label :name %>
+  <div class="choosePhoto"><%= f.file_field :image %></div><br>
+  <div class="namePhoto"><%= f.label :name %>
   <%= f.text_field :name %>
-  <%= f.submit %>
+  <%= f.submit %></div>
 <% end %>

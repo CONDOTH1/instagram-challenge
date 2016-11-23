@@ -20,16 +20,22 @@
       </div>
     </ul>
   <% else %>
-    <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
-    <div class="floatRight">
-      <li><a href='<%= new_photograph_path %>' id="addPhoto">Add a photograph</a></li>
-    </div>
+    <ul>
+      <div class="floatLeft">
+        <li><%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+      </div>
+      <div class="floatRight">
+        <li><a href='<%= new_photograph_path %>' id="addPhoto">Add a photograph</a></li>
+      </div>
+    </ul>
   <% end %>
   </div>
   <h1><%= link_to "PhotoHub", root_path%></h1>
   <div class="editing">
-    <%= notice %>
-    <%= alert %><br>
+    <% if notice %>
+      <div class="alert alert-info" role="alert"><%= notice %><%= alert %></div>
+      <br>
+    <% end %>
     <%= yield %>
   </div>
 </body>

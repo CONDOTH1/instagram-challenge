@@ -6,9 +6,6 @@
       <%= link_to image_tag(photograph.image.url(:thumb)), photograph_path(photograph), :method => :get %>
         <p><%= link_to "Admire #{photograph.name}", photograph_admiration_index_path(photograph), class: 'admirations-link' %>
         <span class="admirations_count"> <%= photograph.admirations.count %> </span> <%= 'admirations'.pluralize(photograph.admirations.count) %></p>
-    <% if photograph.user != current_user %>
-      <p>Sign in to edit</p>
-    <% end %>
   </div>
   <% end %>
 <% else %>

@@ -18,7 +18,7 @@
   padding-right: 50px;
 }
 
-.admirations-link {
+.admirations-link, .commentOn{
   background-color: #337ab7;
   color: white;
   padding: 1px 10px;
@@ -35,4 +35,18 @@
 
 .editing {
   padding: 10px;
+}
+
+.choosePhoto {
+  padding: 10px;
+  width: 100%;
+  background-color: #337ab7;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.namePhoto {
+  margin: 15px
 }
